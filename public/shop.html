@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Desplegable -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Desplegable -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Media/logofuego.png"/>
+    <link rel="stylesheet" href="CSS/shop.css" type="text/css">
+
+    <!-- FONT AWESOME, para poner los simbolos en nuestra web -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JavaScript/shop.js"></script>
+
+</head>
+
+<body>
+<!-- Cabecera -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #EB984E;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="Media/logocabecera.png" style="width: 30%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html">Store</a>
+                </li>
+                <li class="nav-item mr-">
+                    <a class="nav-link mr-3" href="ranking.html">Ranking</a>
+                </li>
+                <!-- Logo -->
+                <li class="nav-item ">
+                    <a href="settings.html">
+                    <img src="Media/user.jpg" class="img-fluid rounded-circle w-3 h-3">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="settings.html" class="nav-link">
+                        <p tabindex="-1" aria-disabled="true" id="nav_username"></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!---------------------------->
+
+<!-- Cartas de los productos -->
+<section class="products text-center">
+    <div class="container p-3">
+        <h1 class="text-white">Firefighter store</h1>
+        <p class="text-white">Primero elige en que partida quieres añadir los objetos que compres.</p>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-outline-danger" id="getInfoPartida1" style="width:50%" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Despliega para ver la información de: Partida 1
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Last access</th>
+                                <th scope="col">Creation date</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Coins</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Information</th>
+                                <td id="LA1" ></td>
+                                <td id="CD1" ></td>
+                                <td id="scr1"></td>
+                                <td id="cns1"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-danger" id="seleccionarPartida1">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-outline-danger collapsed" id="getInfoPartida2" style="width:50%" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Despliega para ver la información de: Partida 2
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Last access</th>
+                                <th scope="col">Creation date</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Coins</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Information</th>
+                                <td id="LA2" >12/12/21</td>
+                                <td id="CD2" >14/09/20</td>
+                                <td id="scr2" >9000</td>
+                                <td id="cns2" >150</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-danger" id="seleccionarPartida2">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-outline-danger collapsed" id="getInfoPartida3" style="width:50%" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Despliega para ver la información de: Partida 3
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead class="thead-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Last access</th>
+                                <th scope="col">Creation date</th>
+                                <th scope="col">Score</th>
+                                <th scope="col">Coins</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">Information</th>
+                                <td id="LA3" ></td>
+                                <td id="CD3" ></td>
+                                <td id="scr3"></td>
+                                <td id="cns3"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <button type="button" class="btn btn-danger" id="seleccionarPartida3">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-white">¡Obtén estos productos para avanzar de una manera más divertida en el juego!</p>
+        <!-- Primera fila -->
+        <div class="row">
+            <!-- Miembros-->
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/aloevera.png" class="img-fluid w-50 h-50"   alt="ALOEVERA">
+                        <h3 id="item_1_name"></h3>
+                        <p id="item_1_description"></p>
+                        <p id="precio_1"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r1" type="button" class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero1">1</label>
+                        <button id="s1" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" style="margin-left: 5px" name="button" id="aloevera" class="btn btn-danger">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/venda.png" class="img-fluid w-50 h-50"   alt="HACHA">
+                        <h3 id="item_2_name"></h3>
+                        <p id="item_2_description"></p>
+                        <p id="precio_2"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r2" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero2">1</label>
+                        <button id="s2" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" style="margin-left: 15px" name="button" id="venda" class="btn btn-danger">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/agua.png" class="img-fluid w-50 h-50"   alt="VACUNA">
+                        <h3 id="item_3_name"></h3>
+                        <p id="item_3_description"></p>
+                        <p id="precio_3"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r3" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero3">1</label>
+                        <button id="s3" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button id="agua" type="button" style="margin-left: 15px" name="button" id="vacuna" class="btn btn-danger">Comprar</button>                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Primera fila -->
+
+        <!-- Segunda fila -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <img src="Media/escudo.png" class="img-fluid w-50 h-50"   alt="CUERDA">
+                        <h3 id="item_4_name"></h3>
+                        <p id="item_4_description"></p>
+                        <p id="precio_4"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r4" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero4">1</label>
+                        <button id="s4" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" style="margin-left: 15px" name="button" id="escudo" class="btn btn-danger">Comprar</button>                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <img src="Media/mascara.png" class="img-fluid w-50 h-50"   alt="CASCO">
+                        <h3 id="item_5_name"></h3>
+                        <p id="item_5_description"></p>
+                        <p id="precio_5"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r5" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero5">1</label>
+                        <button id="s5" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" style="margin-left: 15px" name="button" id="mascara" class="btn btn-danger">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/pastilla.png" class="img-fluid w-50 h-50"   alt="pastilla">
+                        <h3 id="item_6_name"></h3>
+                        <p id="item_6_description"></p>
+                        <p id="precio_6"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r6" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero6">1</label>
+                        <button id="s6" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" name="button" id="pastilla" class="btn btn-danger">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Segunda fila -->
+
+        <!-- Tercera fila -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/extintor.png" class="img-fluid w-50 h-50"   alt="CUERDA">
+                        <h3 id="item_7_name"></h3>
+                        <p id="item_7_description"></p>
+                        <p id="precio_7"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r7" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero7">1</label>
+                        <button id="s7" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" style="margin-left: 15px" name="button" id="extintor" class="btn btn-danger">Comprar</button>                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/mangera.png" class="img-fluid w-50 h-50"   alt="CASCO">
+                        <h3 id="item_8_name"></h3>
+                        <p id="item_8_description"></p>
+                        <p id="precio_8"> <i class="fas fa-gem"></i> </p>
+
+                        <button id="r8" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero8">1</label>
+                        <button id="s8" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" style="margin-left: 15px" name="button" id="mangera" class="btn btn-danger">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="card-body">
+                        <img src="Media/hacha.png" class="img-fluid w-50 h-50"   alt="hacha">
+                        <h3 id="item_9_name"></h3>
+                        <p id="item_9_description"></p>
+                        <p id="precio_9"> <i class="fas fa-gem"></i> </p>
+                        <!--<i class="fas fa-gem"></i>-->
+
+                        <button id="r9" type="button"  class="btn-xs btn-outline-danger">~</button>
+                        <label id="numero9">1</label>
+                        <button id="s9" type="button"  class="btn-xs btn-outline-danger">+</button>
+
+                        <div class="d-flex flex row justify-content-center">
+                            <div class="p-4">
+                                <button type="button" name="button" id="hacha" class="btn btn-danger">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Tercera fila -->
+
+    </div>
+
+</section>
+<!---------------------------->
+<footer class="footer footer-expand-lg footer-light" style="background-color: #EB984E">
+    <div class="container p-3 text-center text-white">
+        <p>
+            Copyright &copy; 2021
+        </p>
+
+    </div>
+</footer>
+<!---------------------------->
+</body>
+</html>

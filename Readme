@@ -1,0 +1,24 @@
+CONSULTAS QUE FALTAN (Backend)
+-> Arreglar función getItemsUser    (fa la consulta però només et reotrna la quantitat del primer objecte que troba a Inventory amb el userID)
+-> Arreglar funció getGames (només retorna la primera partida que troba...)
+-> Fer funció update Inventory      (per aumentar/reduir quantitat de item)
+-> Funció modificar atributs player
+      -> Afegir que quan health=0         -> fin partida
+      -> Funció per marcar l'estat dels jugadors al inici de la partida
+-> ¿Todos los objetos que se encuentra en el mapa se pueden cojer?
+-> Clase itemsComprados? i guardar ahi userID, itemID, quantity (seria como Inventory, pero sin que se modifique cuando se gastan los objetos mientras juegas)
+-> Posición Partida en el ranking
+-> Update object (generalizado, para poder poner el objecto, atributo y nuevo valor) y que sirva para todas
+-> Delete ...
+
+-> Fer la part de servei de getPriceItem i getCoinsPlayer   (nose si pasar-ho per Path o no)(nose si es pot fer una sola funció que et dongui l'atribut que vols de cada objecte...)
+
+
+COSAS QUE FALTAN WEB
+
+-> Todo menos Login i Register 
+-> Hacer que cada boton retorne algo
+-> Hacer que la función pase las imagenes de cada item, para que la web las coja del servidor
+
+UNITY
+Nueva tabla de relación GameItem (Para los items que hay en el momento en la partida?) ?????
